@@ -1,9 +1,7 @@
 import NextLink from "next/link";
+import { renderCSS } from "@/theme/components";
+import { theme } from "@/theme/theme";
 
-export default function Link({ children, href, ...props }) {
-  return (
-    <NextLink href={href} {...props}>
-      {children}
-    </NextLink>
-  );
+export default function Link({ href, styleSheet, ...props }) {
+  return <NextLink href={href} {...props} />;
 }
