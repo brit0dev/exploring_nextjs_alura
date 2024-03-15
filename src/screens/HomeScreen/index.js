@@ -164,57 +164,58 @@ export default function HomeScreen() {
                 }}
               >
                 <Box>
-                  <Link
-                    href="/faq"
-                    styleSheet={{
-                      display: "inline-flex",
-                      alignItems: {
-                        xs: "flex-start",
-                        sm: "center",
-                      },
-                      flexDirection: {
-                        xs: "column",
-                        sm: "row",
-                      },
-                    }}
-                  >
-                    <Text
+                  <Link href="/faq">
+                    <Box
                       styleSheet={{
-                        textVariant: theme.typography.variants.body4,
-                        fontWeight: "600",
-                        borderRadius: theme.space.x64,
-                        color: theme.colors.primary["400"],
-                        backgroundColor: theme.colors.primary["100"],
-                        paddingHorizontal: theme.space["x2.5"],
-                        paddingVertical: theme.space["x1"],
-                        marginRight: theme.space.x2,
-                        marginBottom: {
-                          xs: theme.space.x2,
-                          sm: theme.space.x0,
+                        display: "inline-flex",
+                        alignItems: {
+                          xs: "flex-start",
+                          sm: "center",
+                        },
+                        flexDirection: {
+                          xs: "column",
+                          sm: "row",
                         },
                       }}
                     >
-                      O que tem de novo?
-                    </Text>
-                    <Text
-                      styleSheet={{
-                        textVariant: theme.typography.variants.body4,
-                        fontWeight: "600",
-                        display: "inline-flex",
-                        borderRadius: theme.space.x64,
-                        color: theme.colors.primary["400"],
-                        alignItems: "center",
-                      }}
-                    >
-                      <Text>Confira as principais dúvidas</Text>
-                      <Icon
+                      <Text
                         styleSheet={{
-                          iconVariant: "chevronRight",
-                          marginLeft: theme.space.xpx,
+                          textVariant: theme.typography.variants.body4,
+                          fontWeight: "600",
+                          borderRadius: theme.space.x64,
+                          color: theme.colors.primary["400"],
+                          backgroundColor: theme.colors.primary["100"],
+                          paddingHorizontal: theme.space["x2.5"],
+                          paddingVertical: theme.space["x1"],
+                          marginRight: theme.space.x2,
+                          marginBottom: {
+                            xs: theme.space.x2,
+                            sm: theme.space.x0,
+                          },
                         }}
-                        aria-hidden="true"
-                      />
-                    </Text>
+                      >
+                        O que tem de novo?
+                      </Text>
+                      <Text
+                        styleSheet={{
+                          textVariant: theme.typography.variants.body4,
+                          fontWeight: "600",
+                          display: "inline-flex",
+                          borderRadius: theme.space.x64,
+                          color: theme.colors.primary["400"],
+                          alignItems: "center",
+                        }}
+                      >
+                        <Text>Confira as principais dúvidas</Text>
+                        <Icon
+                          styleSheet={{
+                            iconVariant: "chevronRight",
+                            marginLeft: theme.space.xpx,
+                          }}
+                          aria-hidden="true"
+                        />
+                      </Text>
+                    </Box>
                   </Link>
                 </Box>
                 <Box

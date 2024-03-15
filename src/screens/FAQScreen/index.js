@@ -58,16 +58,20 @@ export default function FAQScreen({ faq }) {
             >
               Não consegue encontrar a resposta que procura? entre em contato
               com nosso{" "}
-              <Link
-                href="mailto:contato@alura.com.br"
-                styleSheet={{
-                  color: theme.colors.primary[400],
-                  hover: {
-                    color: theme.colors.primary[300],
-                  },
-                }}
-              >
-                time de suporte ao consumidor
+              <Link href="mailto:contato@alura.com.br">
+                {" "}
+                <Text
+                  as="span"
+                  styleSheet={{
+                    color: theme.colors.primary[400],
+                    fontWeight: "500",
+                    hover: {
+                      color: theme.colors.primary[300],
+                    },
+                  }}
+                >
+                  time de suporte ao consumidor
+                </Text>
               </Link>
             </Text>
 
@@ -79,17 +83,19 @@ export default function FAQScreen({ faq }) {
                 color: theme.colors.neutral[500],
               }}
             >
-              <Link
-                href="/"
-                styleSheet={{
-                  color: theme.colors.primary[400],
-                  fontWeight: "500",
-                  hover: {
-                    color: theme.colors.primary[300],
-                  },
-                }}
-              >
-                Voltar para home
+              <Link href="/">
+                <Text
+                  as="span"
+                  styleSheet={{
+                    color: theme.colors.primary[400],
+                    fontWeight: "500",
+                    hover: {
+                      color: theme.colors.primary[300],
+                    },
+                  }}
+                >
+                  Voltar para home
+                </Text>
               </Link>
             </Text>
           </Box>
@@ -187,5 +193,5 @@ export default function FAQScreen({ faq }) {
 }
 
 FAQScreen.defaultProps = {
-  faqs: [],
+  faq: [],
 };
